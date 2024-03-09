@@ -11,6 +11,7 @@ pipeline {
                 script {
                     git "https://github.com/hetp4401/Jenkins-Test.git"
                     sh 'ls'
+                    sh python main.py
                 }
             }
         }
