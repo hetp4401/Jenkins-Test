@@ -3,9 +3,11 @@ pipeline {
 
     stages {
         stage("Checkout") {
-            script {
-                git "https://github.com/hetp4401/Jenkins-Test.git"
-                sh ls
+            steps {
+                script {
+                    git "https://github.com/hetp4401/Jenkins-Test.git"
+                    sh 'ls'
+                }
             }
         }
     }
